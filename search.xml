@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title></title>
+      <link href="/2021/12/10/1/"/>
+      <url>/2021/12/10/1/</url>
+      
+        <content type="html"><![CDATA[<p>jkhjkhjk</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>可靠组播</title>
+      <link href="/2021/12/09/%E5%8F%AF%E9%9D%A0%E7%BB%84%E6%92%AD/"/>
+      <url>/2021/12/09/%E5%8F%AF%E9%9D%A0%E7%BB%84%E6%92%AD/</url>
+      
+        <content type="html"><![CDATA[<p>本章主题和算法——在发生故障时，分布式系统的进程如何协调它们的动作和达成对共享值的协定</p><p>主要内容：</p><ul><li>实现一组进程互斥的算法（算法用于协调这些进程对共享资源的访问）</li><li>在分布式系统中，如何实现选举（前一个协调者出现故障后，一组进程如何对新协调者达成一致）</li><li>研究：组播通信、共识、拜占庭协议有关协定和交互一致性的问题</li></ul><blockquote><p>组播：<strong>达成对消息发送顺序的协定</strong></p><p>共识可由这样一个问题归纳而来：</p><p><strong>一组进程如何对一些值达成协定，而不管这些值的值域是什么</strong>。</p></blockquote><h3 id="可靠组播"><a href="#可靠组播" class="headerlink" title="可靠组播"></a><strong>可靠组播</strong></h3><p>一对进程之间<strong>一对一通道通信：</strong></p><ol><li>完整性：任何传递的消息与发送的消息相同，没有消息被传递两次</li><li>有效性：只要进程正确，任何消息最终都会被传递到目的地</li></ol><p>一个<strong>可靠组播</strong>必须满足以下性质：</p><ol><li><p><strong>完整性</strong></p><p>一个正确的进程p传递一个消息m至多一次(消息总可以通过一个与发送者相关的序号来区别)</p></li><li><p><strong>有效性</strong></p><p>如果一个正确的进程组播消息m，那么它终将传递m。</p></li><li><p><strong>协定</strong></p><p>如果一个正确的进程传递消息m，那么在group(m)中的其它正确的进程终将传递m。</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 分布式系统 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 分布式 </tag>
+            
+            <tag> 组播 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
